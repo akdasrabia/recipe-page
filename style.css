@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    color: black;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+}
+
+.title {
+
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    gap: 1em;
+    align-items: baseline;
+}
+
+.sub p {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4F4F4F;
+
+}
+
+.content-image {
+    margin-top: 3%;
+    max-width: 100%;
+}
+
+.subtitle {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+    width: 60%;
+}
+
+.ingredients h3 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.ingredients h4 {
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+
+}
+
+.ingredients ul {
+    list-style: none;
+}
+
+.ingredients li:before {
+    content: "\e835";
+    font-family: "Material Icons";
+    display: inline-block;
+    margin-left: -2em;
+    margin-right: .5em;
+    font-size: 21px
+}
+
+.ingredients li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #333333;
+}
+
+.ingredients li span {
+    font-weight: 700;
+}
+
+.ingredients li .italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+section {
+    max-width: 60%;
+}
+
+.instructions li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.text-field {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+.instructions ol {
+    clear: both;
+    list-style: none;
+    padding-left: 0;
+}
+
+.instructions ol li {
+    margin: 1em;
+    padding-top: .5em;
+    margin-left: 2.5em;
+    display: block;
+    position: relative;
+    counter-increment: inst;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+.instructions li::before {
+    content: counter(inst);
+    text-align: center;
+    background: #F2994A;
+    color: #fff;
+    margin-left: -1.5em;
+
+    border-radius: 6px;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+
+
+    margin-left: -2em;
+    margin-right: .5em;
+}
+
+.source-info {
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #BDBDBD;
+    margin-left: 0;
+}
+
+.card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+
+    width: 30%;
+    /* width: 216px; */
+    height: 367px;
+    margin-top: 5%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 90%;
+    margin-left: 10%;
+    gap: 1em;
+
+
+}
+
+.card-content span {
+    font-size: 30px;
+}
+
+.card-content h5 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+
+    /* Gray 4 */
+
+    color: #BDBDBD;
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.card-content p {
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    /* Gray 1 */
+
+    color: #333333;
+    margin: 0;
+}
+
+.active p, .material-icons {
+    color: #F2994A;
+}
+
+
+footer p {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #BDBDBD;
+
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .sub {
+        width: 100%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .text-field {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        box-shadow: none;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        height: 60%;
+        justify-content: normal;
+        margin-top: 5%;
+        grid-row-gap: 1.5em;
+    }
+    .active {
+        grid-column-start: 1;
+    grid-column-end: 4;
+    }
+
+    .card-content {    
+margin-left: 0;
+    }
+
+    .card-content h5 {
+        font-size: 12px;
+line-height: 10px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+line-height: 12px;
+    }
+
+    .card-content span {
+        font-size: 18px;
+    }
+    section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .card {
+        height: 50%;
+
+    }
+    .content {
+        max-width: 90%;
+    }
+    .card-content h5 {
+        font-size: 8px;
+line-height: 10px;
+    }
+
+    .card-content p {
+        font-size: 10px;
+line-height: 12px;
+    }
+
+    .card-content span {
+        font-size: 15px;
+    }
+    .ingredients h3 {
+        font-size: 18px;
+line-height: 24px;
+    }
+
+    .ingredients h4 {
+        font-size: 16px;
+line-height: 21px;
+    }
+
+    .ingredients li {
+        font-size: 14px;
+    }
+
+    .source-info {
+        font-size: 12px;
+    }
+}
