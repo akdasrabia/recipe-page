@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://gleeful-valkyrie-5107d9.netlify.app/">
+    <a href="https://akdasrabia-recipe-page.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/akdasrabia/recipe-page-master">
+    <a href="https://github.com/akdasrabia/recipe-page">
       Solution
     </a>
     <span> | </span>
